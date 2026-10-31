@@ -1,0 +1,13 @@
+{
+  "name": "eos-m10-cutaway",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An interactive isometric cutaway of a Canon EOS M10 that shows how it takes a picture.",
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "shot": "node tools/capture.mjs docs/index.html --out shots/figure.png --height 1300",
+    "lines": "node tools/lines.mjs docs/index.html --out shots/lines.png --reduced"
+  },
+  "engines": { "node": ">=18" }
+}
